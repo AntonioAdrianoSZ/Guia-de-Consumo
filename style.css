@@ -1,84 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f0f9f4;
-    color: #333;
+    background-color: #fefcf3;
+    display: flex;
 }
 
-header {
-    background-color: #2e7d32;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
+.menu-lateral {
+    background-color: #ffeb3b;
+    width: 220px;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    height: 100%;
 }
 
-header h1 {
-    margin: 0;
+.menu-lateral h2 {
+    font-family: 'Patrick Hand', cursive;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
+.menu-lateral nav a {
+    display: block;
     text-decoration: none;
-    margin: 0 10px;
+    color: #333;
+    padding: 10px 0;
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.menu-lateral nav a:hover {
+    color: #2e7d32;
 }
 
-.section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+main {
+    margin-left: 240px;
+    padding: 20px;
+    flex: 1;
 }
 
-h2 {
-    color: #1b5e20;
+.bloco {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-.card-container {
+h1, h2 {
+    font-family: 'Patrick Hand', cursive;
+    color: #2e7d32;
+}
+
+.mural {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
-.card {
-    background-color: white;
+.nota {
+    width: 180px;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: 'Patrick Hand', cursive;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
+.verde { background-color: #c8e6c9; }
+.amarela { background-color: #fff9c4; }
+.azul { background-color: #bbdefb; }
+.laranja { background-color: #ffe0b2; }
+.rosa { background-color: #f8bbd0; }
 
-button {
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #1b5e20;
-}
-
-footer {
-    text-align: center;
-    background-color: #2e7d32;
-    color: white;
-    padding: 10px;
-    margin-top: 30px;
+img {
+    max-width: 100%;
+    border-radius: 8px;
 }
