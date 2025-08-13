@@ -58,11 +58,15 @@ main {
 }
 
 .bloco {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 30px;
+    max-width: 900px;    
+    margin: 30px auto;   
+    padding: 20px 30px;  
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-sizing: border-box; 
+}
+
 }
 
 h1, h2 {
